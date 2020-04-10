@@ -14,19 +14,19 @@ namespace ParkingNew.Web.Data.Entities
         public int Id { get; set; }
 
         //nombre del parqueadero
-        [Required]
+        [Required (ErrorMessage ="El campo {0} es obligatorio.")]
         [Display(Name = "Nombre Parqueadero")]
         public string Nombre_Parking { get; set; }
 
         //Precio hora fraccion es para que los precios tengan identificador de moneda $, separacion de miles y 2 decimales y en falso apr ano editar mas adelante
         //[DisplayFormat(DataFormatString = "{0:C2}", ApplyFormatInEditMode = false)]
-        [Required]
+        [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         [Column(TypeName = "decimal(18,2)")]
         [Display(Name = "Precio por hora")]
         public decimal Precio_Parking { get; set; }
 
         //Direccion parqueadero
-        [Required]
+        [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         [Display(Name = "Direccion parqueadero")]
         public string Direccion_Parking { get; set; }
 
