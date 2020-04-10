@@ -31,7 +31,7 @@ namespace ParkingNew.Web.Controllers
             }
 
             var parking = await _context.Parkings
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.Id_Parking == id);
             if (parking == null)
             {
                 return NotFound();
@@ -83,7 +83,7 @@ namespace ParkingNew.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, Parking parking)
         {
-            if (id != parking.Id)
+            if (id != parking.Id_Parking)
             {
                 return NotFound();
             }
@@ -104,7 +104,7 @@ namespace ParkingNew.Web.Controllers
             }
 
             var parking = await _context.Parkings
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.Id_Parking == id);
             if (parking == null)
             {
                 return NotFound();
