@@ -10,8 +10,9 @@ namespace ParkingNew.Web.Data.Entities
     public class Parking
     {
         //Primary Key autoincrementable
+        [Key]
         [Required]
-        public int Id { get; set; }
+        public int Id_Parking { get; set; }
 
         //nombre del parqueadero
         [Required (ErrorMessage ="El campo {0} es obligatorio.")]

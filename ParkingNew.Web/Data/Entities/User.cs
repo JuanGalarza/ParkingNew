@@ -8,7 +8,8 @@ namespace ParkingNew.Web.Data.Entities
 {
     public class User
     {
-        public int Id { get; set; }
+        [Key]
+        public int Id_User { get; set; }
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         public string Nombre_User { get; set; }
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
