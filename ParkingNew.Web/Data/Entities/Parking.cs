@@ -37,13 +37,16 @@ namespace ParkingNew.Web.Data.Entities
 
         //Disponibilidad
         [Display(Name = "Disponible")]
-        public bool Estado { get; set; }
+        public bool Estado_Parking { get; set; }
 
         //NumeroAparcamiento disponibles
         [Display(Name = "Aparcamientos Disponibles")]
-        public int Disponibles { get; set; }
+        public int Disponible_Parking { get; set; }
 
-
+        //Digitar la longitud y latitud
+        public double Longitud_Parking { get; set; }
+        public double Latitud_Parking { get; set; }
+        
 
         //aqui esta definida la propiedad para hacer la relacion con la tabla userparking (RELACION MUCHOS A MUCHOS)
         public virtual ICollection<UserParking> UserParkings { get; set; }      

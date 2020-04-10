@@ -25,10 +25,16 @@
                 @Html.DisplayNameFor(model => model.Imagen_Parking)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Estado)
+                @Html.DisplayNameFor(model => model.Estado_Parking)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Disponibles)
+                @Html.DisplayNameFor(model => model.Disponible_Parking)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Longitud_Parking)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Latitud_Parking)
             </th>
             <th></th>
         </tr>
@@ -49,10 +55,16 @@
                 @Html.DisplayFor(modelItem => item.Imagen_Parking)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Estado)
+                @Html.DisplayFor(modelItem => item.Estado_Parking)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Disponibles)
+                @Html.DisplayFor(modelItem => item.Disponible_Parking)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Longitud_Parking)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Latitud_Parking)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id_Parking">Edit</a> |
