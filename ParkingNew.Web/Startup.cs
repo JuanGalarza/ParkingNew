@@ -33,6 +33,10 @@ namespace ParkingNew.Web
                 cfg.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
 
+            //este hace la inyeccion de SeedDb
+            services.AddTransient<SeedDb>();
+
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
