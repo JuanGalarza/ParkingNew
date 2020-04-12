@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ParkingNew.Web.Data.Entities
 {
@@ -11,11 +8,10 @@ namespace ParkingNew.Web.Data.Entities
     {
         //Primary Key autoincrementable
         [Key]
-        [Required]
         public int Id_Parking { get; set; }
 
         //nombre del parqueadero
-        [Required (ErrorMessage ="El campo {0} es obligatorio.")]
+        [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         [Display(Name = "Nombre Parqueadero")]
         public string Nombre_Parking { get; set; }
 
@@ -46,9 +42,9 @@ namespace ParkingNew.Web.Data.Entities
         //Digitar la longitud y latitud
         public double Longitud_Parking { get; set; }
         public double Latitud_Parking { get; set; }
-        
 
-        //aqui esta definida la propiedad para hacer la relacion con la tabla userparking (RELACION MUCHOS A MUCHOS)
-        public virtual ICollection<ClientParking> UserParkings { get; set; }      
+
+        //aqui esta definida la propiedad para hacer la RELACION con la tabla userparking (RELACION MUCHOS A MUCHOS)
+        public virtual ICollection<ClientParking> ClientParkings { get; set; }
     }
 }
