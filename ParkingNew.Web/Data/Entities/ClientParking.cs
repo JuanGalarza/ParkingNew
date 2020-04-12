@@ -4,11 +4,7 @@ namespace ParkingNew.Web.Data.Entities
 {
     public class ClientParking
     {
-        //Primary Key autoincrementable
-        [Key]
-        public int Id_ClientParking { get; set; }
-
-        public int Id_User { get; set; }
+        public int Id_Client { get; set; }
         public int Id_Parking { get; set; }
 
 
