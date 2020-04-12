@@ -49,6 +49,6 @@ namespace ParkingNew.Web.Data.Entities
         
 
         //aqui esta definida la propiedad para hacer la relacion con la tabla userparking (RELACION MUCHOS A MUCHOS)
-        public virtual ICollection<UserParking> UserParkings { get; set; }      
+        public virtual ICollection<ClientParking> UserParkings { get; set; }      
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ParkingNew.Web.Data.Entities
 {
-    public class UserParking
+    public class ClientParking
     {
         [Key]
         public int Id { get; set; }

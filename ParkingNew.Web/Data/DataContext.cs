@@ -15,7 +15,7 @@ namespace ParkingNew.Web.Data
 
         public DbSet<Parking> Parkings { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<UserParking> UserParkings { get; set; }
+        public DbSet<ClientParking> UserParkings { get; set; }
 
     }
 }
